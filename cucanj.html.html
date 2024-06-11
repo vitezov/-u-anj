@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerlifting</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #00FF00;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header' 
+                'left middle middle middle middle right' 
+                'footer footer footer footer footer footer';
+        }
+
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .middle {
+            grid-area: middle;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container  {
+                grid-template-areas: 
+                    'header header header header header header' 
+                    'left left left left left left' 
+                    'middle middle middle middle middle middle' 
+                    'right right right right right right' 
+                    'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        Čučanj
+    </div>
+  
+    <div class="left">
+		<div class="link-container">
+			<a href="" target="_blank">Powerlifting</a>
+			<a href="" target="_blank">Deadlift</a>
+			<a href="" target="_blank">Potisak s klupe</a>
+		</div>
+    </div>
+  
+    <div class="middle">
+        <p>Često se sa razlogom čučanj naziva kraljem vježbi. Prilikom izvođenja čučnja (pogotovo sa dvoručnim utegom) aktivira se cijelo tijelo.
+		Najviše su opterećene noge (poglavito kvadricepsi), zatim donji dio leđa, trbuh i ostali dijelovi tijela.
+		Također zavisno od pojedinih varijanti čučnja mogu se više aktivirati pojedini dijelovi.</p>
+        <img src="https://powerliftingtechnique.com/wp-content/uploads/2019/02/CANKellyBrantonJPEG_large.jpg" alt="Deadlift" width="40%">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoc9M0lORw4IS-fdkqW8Xiv84uw8zS42TOyg&s.jpg" alt="Deadlift" width="40%">
+    </div>
+  
+    <div class="right">
+        <p>U natjecanjima, čučanj se može raditi opremljen (odijelo za čučanj) ili neopremljeno gdje se mogu koristiti samo rukavi za koljeno. Svjetski rekord za opremljen čučanj je 595 kg, dok je svjetski rekord za neopremljen čučanj 525 kg. </p>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWSsdKpqEnrcO9LXXQRuSHUVt2-q5WoLDdQ&s.png" alt="haftor" width="100%">
+    </div> 
+  
+    <div class="footer">
+        © 2024 My Grid Layout Page. All rights reserved.
+    </div>
+</div>
+
+</body>
